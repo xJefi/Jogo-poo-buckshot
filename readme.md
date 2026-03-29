@@ -17,7 +17,7 @@ nome e vida, que são encapsulados como privados.
 -agir(), que imprime uma mensagem no console no turno do personagem. Esse método será reescrito diferentemente por cada classe que herdará da classe personagem.
 
 ## Classe Jogador
-### Herda os atributos nome e vida da super classe Personagem
+### Herda os atributos nome e vida da super classe Personagem.
 ### Reescreve o método agir() da classe personagem com uma mensagem adicional que será impressa no console.
 
 ## Classe Inimigo
