@@ -32,21 +32,34 @@ nome e vida, que são encapsulados como privados.
 ## Classe Jogo
 ### Possui os atributos:
 -jogador, que recebe a classe Jogador
+
 -inimigo, que recebe a classe Inimigo
+
 -arma, que recebe a classe Arma
+
 -rodada, que receberá o número da rodada atual no jogo
+
 -recompensa, que acumulará um valor exponencialmente a cada rodada
 ### Possui os métodos:
 -mostrarStatus(), que mostra o nome e a vida de cada personagem a cada rodada
+
 -balaFalsa(), que imprime no console uma mensagem quando a arma não dispara
+
 -mensagemFinal(), que imprime no console uma mensagem quando o jogador ou o inimigo vence o jogo
+
 -iniciar(), que inicia o jogo - o método iniciar() é composto por:
+
 --Uma variável chamada turnoJogador, que, quando retorna o valor true, executa o turno do jogador, e quando retorna false executa o turno do inimigo;
+
 --Um loop while, que continua rodando enquanto a vida do jogador e a vida do inimigo forem maior do que 0;
+
 ### -Dentro do loop-:
 -São imprimidos no console a rodada atual (que é somada em 1 toda vez que o turno do jogador inicia), a recompensa atual (que é multiplicada por 2 quando o turno do jogador inicia) e é disparado o método agir(), que foi reescrito para cada personagem em específico;
+
 -Se variável disparo for true (se o número aleatório for menor do que 0.4, disparando o método atirar()), será disparado o método receberDano(), se não, será disparado o método balaFalsa();
+
 -Após o turno ser concluído, a variável turnoJogador é negada, fazendo com que ela inverta seu valor;
+
 -Quando o jogo finalmente sai do loop, é disparado o método mensagemFinal
 
 ## Encapsulamento e Herança
