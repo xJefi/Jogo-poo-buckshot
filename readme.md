@@ -2,7 +2,7 @@
 Neste jogo, você assume o papel de uma pessoa com grandes problemas financeiros, que, no ápice de seu desespero, aceita a oferta de um desconhecido, conhecido apenas como "Dealer", para apostar a própria vida em um jogo de roleta russa. 
 Neste jogo, as apostas são grandes e as recompensas também. O valor da recompensa começa em 10 mil reais, e, a cada rodada em que você sobrevive, o valor é dobrado. Ao final do jogo, se você sobreviver, conseguirá receber uma grande recompensa.
 
-Minha ideia foi fazer jogo simples de roleta russa em turnos em typescript, onde existe uma chance da arma atirar em cada rodada. Tanto o jogador quanto o inimigo possuem 3 vidas, e o primeiro a zerá-las perde o jogo.
+Minha ideia foi fazer um jogo simples de roleta russa em turnos em typescript, onde existe uma chance da arma atirar em cada rodada. Tanto o jogador quanto o inimigo possuem 3 vidas, e o primeiro a zerá-las perde o jogo.
 Meu jogo foi inspirado no jogo estoniano "Buckshot Roulette".
 
 ## DESCRIÇÃO DO PROJETO:
@@ -77,3 +77,185 @@ No arquivo executar.ts são instanciadas as classes jogador, inimigo, arma e jog
 
 Para rodar o jogo basta chamar o método:
 ### jogo.iniciar()
+
+##Exemplo de execução no terminal:
+================ ROLETA RUSSA ================
+
+Rodada 1
+Recompensa Atual: R$ 10000
+
+-----Turno do Jogador-----
+Você está agindo...
+JOGADOR (Você) puxa o gatilho...
+--> Mas nada aconteceu
+
+----------STATUS----------
+Dealer - Vida: 3
+Você - Vida: 3
+--------------------------
+
+
+-----Turno do Inimigo-----
+Dealer está agindo...
+INIMIGO (Dealer) atira automaticamente...
+--> Mas nada aconteceu
+
+----------STATUS----------
+Dealer - Vida: 3
+Você - Vida: 3
+--------------------------
+
+
+Rodada 2
+Recompensa Atual: R$ 20000
+
+-----Turno do Jogador-----
+Você está agindo...
+JOGADOR (Você) puxa o gatilho...
+--> BANG... Você recebeu dano
+
+----------STATUS----------
+Dealer - Vida: 3
+Você - Vida: 2
+--------------------------
+
+
+-----Turno do Inimigo-----
+Dealer está agindo...
+INIMIGO (Dealer) atira automaticamente...
+--> Mas nada aconteceu
+
+----------STATUS----------
+Dealer - Vida: 3
+Você - Vida: 2
+--------------------------
+
+
+Rodada 3
+Recompensa Atual: R$ 40000
+
+-----Turno do Jogador-----
+Você está agindo...
+JOGADOR (Você) puxa o gatilho...
+--> Mas nada aconteceu
+
+----------STATUS----------
+Dealer - Vida: 3
+Você - Vida: 2
+--------------------------
+
+
+-----Turno do Inimigo-----
+Dealer está agindo...
+INIMIGO (Dealer) atira automaticamente...
+--> Mas nada aconteceu
+
+----------STATUS----------
+Dealer - Vida: 3
+Você - Vida: 2
+--------------------------
+
+
+Rodada 4
+Recompensa Atual: R$ 80000
+
+-----Turno do Jogador-----
+Você está agindo...
+JOGADOR (Você) puxa o gatilho...
+--> Mas nada aconteceu
+
+----------STATUS----------
+Dealer - Vida: 3
+Você - Vida: 2
+--------------------------
+
+
+-----Turno do Inimigo-----
+Dealer está agindo...
+INIMIGO (Dealer) atira automaticamente...
+--> BANG... Dealer recebeu dano
+
+----------STATUS----------
+Dealer - Vida: 2
+Você - Vida: 2
+--------------------------
+
+
+Rodada 5
+Recompensa Atual: R$ 160000
+
+-----Turno do Jogador-----
+Você está agindo...
+JOGADOR (Você) puxa o gatilho...
+--> Mas nada aconteceu
+
+----------STATUS----------
+Dealer - Vida: 2
+Você - Vida: 2
+--------------------------
+
+
+-----Turno do Inimigo-----
+Dealer está agindo...
+INIMIGO (Dealer) atira automaticamente...
+--> BANG... Dealer recebeu dano
+
+----------STATUS----------
+Dealer - Vida: 1
+Você - Vida: 2
+--------------------------
+
+
+Rodada 6
+Recompensa Atual: R$ 320000
+
+-----Turno do Jogador-----
+Você está agindo...
+JOGADOR (Você) puxa o gatilho...
+--> BANG... Você recebeu dano
+
+----------STATUS----------
+Dealer - Vida: 1
+Você - Vida: 1
+--------------------------
+
+
+-----Turno do Inimigo-----
+Dealer está agindo...
+INIMIGO (Dealer) atira automaticamente...
+--> Mas nada aconteceu
+
+----------STATUS----------
+Dealer - Vida: 1
+Você - Vida: 1
+--------------------------
+
+
+Rodada 7
+Recompensa Atual: R$ 640000
+
+-----Turno do Jogador-----
+Você está agindo...
+JOGADOR (Você) puxa o gatilho...
+--> Mas nada aconteceu
+
+----------STATUS----------
+Dealer - Vida: 1
+Você - Vida: 1
+--------------------------
+
+
+-----Turno do Inimigo-----
+Dealer está agindo...
+INIMIGO (Dealer) atira automaticamente...
+--> BANG... Dealer recebeu dano
+
+----------STATUS----------
+Dealer - Vida: 0
+Você - Vida: 1
+--------------------------
+
+
+=====FIM DE JOGO=====
+Parabéns!!! Você venceu!
+Você sobreviveu por 8 rodadas e faturou R$ 1280000!
